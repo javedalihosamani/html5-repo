@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML-5 SEMANTIC</title>
+        <style>
+            dialog{
+                background-color: tan;
+                color: white;
+                padding: 20px;
+                margin: 20px;
+                border: 2px solid grey;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+            <h3>DETAILS TAG</h3>
+            <p>This tag is used to specify the additional details on the web page that the user can view or hide on demand.</p>
+        </center>
+        <hr>
+        <details>  
+            <h1>HTML</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione porro, dolorem explicabo magnam repudiandae facilis tenetur deleniti! Eaque aut, esse cumque accusantium et fuga excepturi perferendis ipsam debitis necessitatibus quam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim veniam reiciendis aut quibusdam illo voluptatum quaerat quas maxime cumque laboriosam. A, beatae! Dolor, velit eaque doloribus vero neque quas saepe!</p>
+        </details>  
+        <details>  
+            <h1>CSS</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione porro, dolorem explicabo magnam repudiandae facilis tenetur deleniti! Eaque aut, esse cumque accusantium et fuga excepturi perferendis ipsam debitis necessitatibus quam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim veniam reiciendis aut quibusdam illo voluptatum quaerat quas maxime cumque laboriosam. A, beatae! Dolor, velit eaque doloribus vero neque quas saepe!</p>p>
+        </details>  
+        <details>  
+            <h1>JS</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione porro, dolorem explicabo magnam repudiandae facilis tenetur deleniti! Eaque aut, esse cumque accusantium et fuga excepturi perferendis ipsam debitis necessitatibus quam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim veniam reiciendis aut quibusdam illo voluptatum quaerat quas maxime cumque laboriosam. A, beatae! Dolor, velit eaque doloribus vero neque quas saepe!</p>p>
+        </details>  
+        
+        <p><b>Note:</b> The details tag is currently only supported in Opera, Chrome, and in Safari 6.</p>
+        <hr>
+        
+        <center>
+            <h3>This is SUMMARY TAG</h3>
+            <p>The <b>HTML SUMMARY</b> tag is used with <b>DETAILS</b> tag. It is used as a summary, caption or legend for the content of a details element.</p>
+        </center>
+        <hr>
+        <details>  
+            <summary>Html Details</summary>  
+            <p> Html is a popular tutorial website.</p>  
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint inventore quisquam doloremque dolores repudiandae, voluptates corporis culpa aut nam ipsa sed architecto, et accusamus magni officiis totam deleniti, odit perspiciatis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus iure quasi voluptatibus saepe molestias vitae laborum, sequi, porro delectus enim nemo reprehenderit in rerum vel consectetur quas id quod ex!</p>
+        </details>
+        <hr>
+        
+        <center>
+            <h3>TIME TAG..!</h3>
+            <p> <b>HTML time</b> tag is used to define date and time. It displays time value in a 24 hour clock or a precise date in a Gregorian calendar in HTML.</p>
+        </center>
+        <hr>
+        <p>Lorem ipsum dolor sit amet 5:30PM consectetur adipisicing elit. Cupiditate maxime tempore, dignissimos earum animi, veniam sequi ipsam at a, et iusto? Rerum, voluptas quam officiis in alias nesciunt illo ipsa!</p>
+        <p>We open our Office at <time>09:30</time> am.</p>  
+        <hr>
+        
+        <center>
+            <h3>This is DIALOG TAG</h3>
+            <p><b>( This tag to create a new popup dialog on a web page. )</b></p>
+        </center>
+        
+        <dialog id="dd">  
+            <button type="button" onclick="closeDialog();">&times;</button>
+            <h1>Welcome to Dialog Tag..!</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo neque, asperiores eos totam laboriosam nemo hic quo nulla voluptatem numquam recusandae ipsam voluptatibus corrupti nam ea, enim placeat quia itaque? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quae autem omnis vitae, expedita deserunt, quas enim ea molestias dolorum reiciendis accusantium quis illo suscipit aperiam distinctio explicabo ipsam facilis?e</p>
+        </dialog>    
+
+        <button type="button" onclick="openDialog();">POPUP</button>
+
+        <script>
+            function openDialog() {
+                document.getElementById("dd").show();
+            }
+            function closeDialog() {
+                document.getElementById("dd").close();
+            }
+        </script>
+    </body>
+</html>

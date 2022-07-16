@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PROGRESS</title>
+        <style>
+            progress{
+                width: 100%;
+                height: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+            <h1>PROGRESS TAG..!</h1>
+        </center>
+        <hr>
+
+        <h2>Default Progress Tag..!</h2>
+        <progress></progress>
+
+        <h2>Static Progress Tag..!</h2>
+        <progress min="1" max="100" value="80"></progress>
+
+        <h2>Dynamic Progress Tag..!</h2>
+        <progress min="1" max="100" id="progress"></progress>
+
+        <script>
+            var gMin = 1;
+            function callProgress(){                
+                if(gMin<=100){
+                    gMin++;
+                    document.getElementById("progress").value = gMin;
+                }
+            }
+            setInterval("callProgress()",1000);
+        </script>
+    </body>
+</html>

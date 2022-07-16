@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>METER</title>
+        <style>
+            meter{
+                width: 100%;
+                height: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+            <h1>METER TAG..!</h1>
+        </center>
+        <hr>
+
+        <h2>Default Meter Tag..!</h2>
+        <meter></meter>
+
+        <h2>Static Meter Tag..!</h2>
+        <meter min="1" max="100" value="50"></meter>
+
+        <h2>Dynamic Meter Tag..!</h2>
+        <meter min="1" max="100" id="pro"></meter>
+
+        <script>
+            var gMin =1;
+            function CallProgress(){
+                if(gMin<=100){
+                    gMin++;
+                    document.getElementById("pro").value = gMin;
+                }
+            }
+            setInterval("CallProgress()",1000);
+        </script>
+    </body>
+</html>
